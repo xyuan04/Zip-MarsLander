@@ -13,7 +13,9 @@ You must land at a speed of 2 m/s or 1 m/s. Good Luck!_
 Your project is to do two things.
 
 - build the code for the Vehicle class.
+  - there is quite  bit of pseudocode in the Vehicle and Simulation classes
 - design a new, replacement landing computer
+  - You need to write a method that allows the lander to land safely (after you can do it manually)
 
 If you're having trouble understanding what we mean, look at the
 [SpaceX Mars Mission](https://www.spacex.com/human-spaceflight/mars/)
@@ -50,10 +52,12 @@ The main loop of the simulation looks like this:
 
 Looking at the source files, you'll see an interface called `BurnStream`. 
 It is how input into the game is handled.
+See how if there is an Interface for BurnStream, you can implement a few different ways of handling input to the vehicle.
 The first is a list of pre-calculated burns, which should allow the lander to land safely from a predetermined altitude.
 The second is the one used to play with a human player.
+Use this one to play the game and figure out the simulation.
 And, in the Hard Part below, you can write a new class, OnBoardComputer, that can
-act like a smart softwar sustem that mimics a human and lands the Starship all the time safely.
+act like a smart software system that mimics a human and lands the Starship all the time safely.
 
 And this means that the "real game" which takes user input looks like this
 
